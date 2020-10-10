@@ -31,4 +31,4 @@ make -j
 
 
 ## Gallery
-<p align="center"><img src="https://github.com/Vulpinii/bezier_curve_editor/blob/master/images/screenshot_heart.png" alt="Screenshot" width="90%" /></p>
+<p align="center"><img src="https://github.com/Vulpinii/bezier_curve_editor/blob/master/images/screenshot_heart.png" alt="Screenshot" width="100%" /></p>
