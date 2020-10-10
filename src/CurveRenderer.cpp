@@ -56,8 +56,8 @@ void CurveRenderer::setUpVBO(std::vector<glm::vec3> &c, std::vector<glm::vec3> &
     if(etape < 0) etape = 0;
     if(etape > (float)nbPoints) etape = (float)nbPoints;
     m_lines.clear();
-    _linecolors.clear();
-    constructionLines(c, (float) etape/ (float) nbPoints, m_lines, _linecolors);
+    m_linecolors.clear();
+    constructionLines(c, (float) etape/ (float) nbPoints, m_lines, m_linecolors);
     glBindVertexArray(m_VAOlines);
     glBindBuffer(GL_ARRAY_BUFFER, m_VBOlines);
     glBufferData(GL_ARRAY_BUFFER, sizeof(glm::vec3)*m_lines.size(), m_lines.data(), GL_DYNAMIC_DRAW);
@@ -65,7 +65,7 @@ void CurveRenderer::setUpVBO(std::vector<glm::vec3> &c, std::vector<glm::vec3> &
     glEnableVertexAttribArray(0);
     glBindVertexArray(m_VAOlines);
     glBindBuffer(GL_ARRAY_BUFFER, m_VBOcolorlines);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(glm::vec3)*_linecolors.size(), _linecolors.data(), GL_DYNAMIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(glm::vec3)*m_linecolors.size(), m_linecolors.data(), GL_DYNAMIC_DRAW);
     glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, sizeof(glm::vec3), (void*)nullptr);
     glEnableVertexAttribArray(1);
 }
@@ -108,4 +108,6 @@ void CurveRenderer::draw(const Shader & shaderCurve, const Shader & shaderEditio
 void CurveRenderer::clear() {
     m_vertices.clear();
     m_controlPoints.clear();
+    m_lines.clear();
+    m_linecolors.clear();
 }

@@ -414,8 +414,8 @@ void renderGUI(char &curveFunction, int &precision, int &iteration,
             if(!curve.getControlPoints().empty()) regenerate = true;
         }
         ImGui::SliderInt(" %", &iteration, 1, 100);
-        float perit = (float)precision * ((float)iteration/100.0f);
-        if (perit != (float)curve.getIteration()) {
+        float perit = (float)curve.getPrecision() * ((float)iteration/100.0f);
+        if ((int)perit != (int)curve.getIteration()) {
             curve.setPrecision((float)precision);
             curve.setIteration((int)perit);
             if(!curve.getControlPoints().empty()) regenerate = true;

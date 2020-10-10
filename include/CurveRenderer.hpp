@@ -47,7 +47,7 @@ private:
 
 	std::vector<glm::vec3> m_vertices;
 	std::vector<glm::vec3> m_controlPoints;
-    std::vector<glm::vec3> m_lines, _linecolors;
+    std::vector<glm::vec3> m_lines, m_linecolors;
 
     // function to construct intermediate lines
     void constructionLines(const std::vector<glm::vec3> &in_pts, float u,
