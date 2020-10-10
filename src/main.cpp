@@ -422,7 +422,7 @@ void renderGUI(char &curveFunction, int &precision, int &iteration,
         }
 
         ImGui::Checkbox(" Hide Control Points", &hideConstruction);
-        ImGui::Checkbox(" Show steps dards", &showSteps);
+        ImGui::Checkbox(" Show steps lines", &showSteps);
         ImGui::Dummy(ImVec2(0.0f, 20.0f));
 
         ImGui::SetNextTreeNodeOpen(true);
