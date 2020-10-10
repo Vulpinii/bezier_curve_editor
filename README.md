@@ -32,3 +32,4 @@ make -j
 
 ## Gallery
 <p align="center"><img src="https://github.com/Vulpinii/bezier_curve_editor/blob/master/images/screenshot_heart.png" alt="Screenshot" width="100%" /></p>
+<p align="center"><img src="https://github.com/Vulpinii/bezier_curve_editor/blob/master/images/bezier_curve_editor.gif" alt="Animated gif" width="100%" /></p>
