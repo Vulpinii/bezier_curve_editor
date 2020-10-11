@@ -31,5 +31,9 @@ make -j
 
 
 ## Gallery
-<p align="center"><img src="https://github.com/Vulpinii/bezier_curve_editor/blob/master/images/screenshot_heart.png" alt="Screenshot" width="100%" /></p>
+#### YouTube Video
+<a href="https://www.youtube.com/watch?v=zsa_Gt1qFe0
+" target="_blank"><img src="https://github.com/Vulpinii/bezier_curve_editor/blob/master/images/screenshot_heart.png" 
+alt="Bezier Curve Editor" width="100%" height="auto" border="10" /></a>
+#### Preview
 <p align="center"><img src="https://github.com/Vulpinii/bezier_curve_editor/blob/master/images/bezier_curve_editor.gif" alt="Animated gif" width="100%" /></p>
