@@ -24,11 +24,12 @@ file(GLOB PROJECT_HEADERS "include/*.h*")
 
 # include source files
 file(GLOB PROJECT_SOURCES "src/*.cpp")
+file(GLOB IMGUI_HEADERS "external/imgui/include/*.h")
 file(GLOB IMGUI_SOURCES "external/imgui/src/*.cpp")
 file(GLOB GLAD_SOURCES "external/glad/src/*.c")
 
 # group files in IDE
-source_group("include" FILES ${PROJECT_HEADERS})
+source_group("include" FILES ${PROJECT_HEADERS} ${IMGUI_HEADERS})
 source_group("src" FILES ${PROJECT_SOURCES})
 source_group("external" FILES ${IMGUI_SOURCES} ${GLAD_SOURCES})
 
@@ -36,6 +37,7 @@ source_group("external" FILES ${IMGUI_SOURCES} ${GLAD_SOURCES})
 add_executable(program ${PROJECT_SOURCES}
 					${PROJECT_HEADERS} # if not included here, it won't show up in the IDE?
 					${IMGUI_SOURCES}
+					${IMGUI_HEADERS}
 					${GLAD_SOURCES}
 		)
 					
