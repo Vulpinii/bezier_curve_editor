@@ -14,7 +14,7 @@ This program is a curve editor. It is based on Bézier curves calculated with th
 #### On Linux
 **Prerequisite**: CMake
 
-To build this program, download the source code using `` git clone`` or directly the zip archive.
+To build this program, download the source code using ``git clone https://github.com/Vulpinii/bezier_curve_editor`` or directly the zip archive.
 Then run the `` launch.sh`` shell script.
 
 You can do it manually by following these commands:
